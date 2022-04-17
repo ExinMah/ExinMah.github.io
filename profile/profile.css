@@ -89,25 +89,43 @@ h4{
     background: linear-gradient(to right, #038894 30%, #03b9ca86 100%);
     text-align:center;
     color: #ffffff;
-    padding: 20px 0px 20px 0px;
+    padding: 20px 0px 25px 0px;
     margin-left: 22%;
 }
 
-.img {
-    width: 70px;
-    height: 70px;
-    border-radius: 6px;
-    object-fit: cover;
-    margin-bottom: 10px;
+#img-section{
+    height: 200px;
+    width: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(120%, 2%);
 }
 
-#img-section p,
+.img {
+    height: 50%;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid grey;
+    overflow: hidden;
+}
+
+#img-section p{
+    font-size: 12px;
+    color: rgb(20, 19, 19);
+    margin-top: 5%;
+}
+
 #deactivate p {
     font-size: 12px;
     color: rgb(20, 19, 19);
     border-bottom: none;
-    margin-left: 35px;
-    padding: 15px 58px 0 15px;
+    margin-left: 5%;
+    margin-right: 25%;
+    padding: 15px 58px 10px 15px;
 }
 
 #img-section b,
@@ -184,6 +202,19 @@ h4{
     outline: none;
 }
 
+.uploadBtn{
+    display: inline-block;
+    background-color: #026670;
+    color: #fff;
+    padding: 7px 20px;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, .2);
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
 .btn, .btn-1{
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
@@ -202,7 +233,7 @@ h4{
     flex-wrap: wrap;
 }
 
-.btn:hover{
+.btn:hover, .uploadBtn:hover{
     background-color: #08a4b3;
 }
 

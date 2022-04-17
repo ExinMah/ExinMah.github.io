@@ -11,14 +11,14 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
    <link rel="stylesheet" href="faq.css">
 
-   <script src="base_script.js"></script>
+   <script src="faq.js"></script>
 </head>
 
 <body>
     <!-- HEADER START -->
 
     <header>
-        <a href="../home/index.html" id="logo-image">
+        <a href="../index.html" id="logo-image">
             <img id="site-logo" src="../assets/icons/logo.png" alt="Batik Versatile">
         </a>
 
@@ -26,7 +26,7 @@
             <div class="menubar">
                 <ul>
                 <!-- Depending on what page you're working on, do adjust the links -->
-                    <li><a href="../home/index.html">Home</a></li>
+                    <li><a href="../index.html">Home</a></li>
                     <li><a href="../about/about.html">About</a></li>
                     <li><a href="../products/products.html">Products</a>
                         <div class="sub-menu">
@@ -54,7 +54,21 @@
                     </div>
                 </li>
                 <a href="../cart/cart.html" class="fas fa-shopping-cart" id="cart-icon"></a>
-                <div id="menu-btn" class="fas fa-bars"></div>
+                <a href="#" id="menu-btn" class="fas fa-bars"></a>
+                <div class="mobile-view">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../about/about.html">About</a></li>
+                        <li><a href="../products/products.html">Products</a></li>
+                        <div class="mobile-sub">
+                            <li><a href="../products/men_category.html">Men</a></li>
+                            <li><a href="../products/women_category.html">Women</a></li>
+                            <li><a href="../products/accessories.html">Accessories</a></li>
+                        </div>
+                        <li><a href="../contact/contact.html">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>   
     </header>
@@ -165,9 +179,6 @@
                 </div>
             </div>
         </div>
-                
-
-
 
     </div>
 
@@ -192,11 +203,11 @@
     
             <div class="box">
                 <h3>Quick links</h3>
-                <a href="../home/index.html"> <i class="fas fa-arrow-right"></i> Home </a>
+                <a href="../index.html"> <i class="fas fa-arrow-right"></i> Home </a>
                 <a href="../about/about.html"> <i class="fas fa-arrow-right"></i> Abouts </a>
                 <a href="../products/products.html"> <i class="fas fa-arrow-right"></i> Products </a>
                 <a href="../contact/contact.html"> <i class="fas fa-arrow-right"></i> Contact </a>
-                <a href="faq.html"> <i class="fas fa-arrow-right"></i> FAQ </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> FAQ </a>
             </div>
         </div>
 
@@ -210,7 +221,6 @@
     </footer>
 
     <!-- FOOTER END -->
-    <script src="faq.js"></script>
 </body>
 
 </html>

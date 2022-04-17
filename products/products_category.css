@@ -1,19 +1,5 @@
 @charset "utf-8";
 
-/*@font-face {
-	font-family: Roboto;
-	src: url(../assets/fonts/Roboto/Roboto-Regular.ttf) format('truetype');
-}
-
-@font-face {
-	font-family: Roboto1;
-	src: url(../assets/fonts/Roboto/Roboto-Black.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: Anton;
-    src: url(../assets/fonts/Anton/Anton-Regular.ttf) format('truetype');
-}*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
 body {
@@ -81,12 +67,10 @@ div.upper-container img {
 
 .category-container .category ul {
     display: flex;
-    /*flex-shrink: 3;*/
 }
 
 .category-container nav.category ul li {
     float: left;
-    /*padding-left: 100px;*/
 }
 
 .category-container nav.category ul li a {
@@ -97,22 +81,13 @@ div.upper-container img {
     background-color: #035b63;
 }
 
-
-
-/*div.lower-container {
-    clear: left;
-    margin: auto;
-    background-color: aqua;
-
-    top:20px;
-    /*width: 33.33%;*/
-/*}*/
 .lower-container .products {
     max-width: 90%;
     margin : 10px auto;
 }
 
-.product-containers {
+.product-containers,
+.product {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -155,14 +130,14 @@ div.upper-container img {
     text-align: center;
 }
 
-.product-quantity input[type=number]::-webkit-inner-spin-button, .product-quantity input[type=number]::-webkit-outer-spin-button {
+.product-quantity input[type=number]::-webkit-inner-spin-button, 
+.product-quantity input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
 
 .product-quantity input[type=number] {
     text-align: center;
-
     outline: none;
 }
 

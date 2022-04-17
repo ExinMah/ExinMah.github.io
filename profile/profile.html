@@ -16,7 +16,7 @@
 <body>
     <!-- HEADER START -->
     <header>
-        <a href="home/index.html" id="logo-image">
+        <a href="../index.html" id="logo-image">
             <img id="site-logo" src="../assets/icons/logo.png" alt="Batik Versatile">
         </a>
 
@@ -24,7 +24,7 @@
             <div class="menubar">
                 <ul>
                 <!-- Depending on what page you're working on, do adjust the links -->
-                    <li><a href="../home/index.html">Home</a></li>
+                    <li><a href="../index.html">Home</a></li>
                     <li><a href="../about/about.html">About</a></li>
                     <li><a href="../products/products.html">Products</a>
                         <div class="sub-menu">
@@ -51,8 +51,22 @@
                         </ul>
                     </div>
                 </li>
-                <a href="../products/cart.html" class="fas fa-shopping-cart" id="cart-icon"></a>
-                <div id="menu-btn" class="fas fa-bars"></div>
+                <a href="../cart/cart.html" class="fas fa-shopping-cart" id="cart-icon"></a>
+                <a href="#" id="menu-btn" class="fas fa-bars"></a>
+                <div class="mobile-view">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../about/about.html">About</a></li>
+                        <li><a href="../products/products.html">Products</a></li>
+                        <div class="mobile-sub">
+                            <li><a href="../products/men_category.html">Men</a></li>
+                            <li><a href="../products/women_category.html">Women</a></li>
+                            <li><a href="../products/accessories.html">Accessories</a></li>
+                        </div>
+                        <li><a href="../contact/contact.html">Contact</a></li>
+                        <li><a href="../faq/faq.html">FAQ</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
@@ -87,11 +101,12 @@
 
         <div class="profile-content">
             <div> 
-                <img src="userImg.png" class="img" alt="">
                 <div id="img-section"> 
+                    <img src="userImg.png" class="img" id="img" alt=""><br>
                     <b>Profile Photo</b>
-                    <p>Accepted file type .png. Less than 1MB</p> 
-                    <button class="btn-1">Upload</button>
+                    <p>Accepted file type .png, .jpg and .jpeg</p> 
+                    <input type="file" id="upload" accept="image/*" onchange="showPreviewOne(event);" hidden/>
+                    <label for="upload" class="uploadBtn" id="imgRemove" onclick="myImgRemoveFunctionOne();">Upload</label>
                 </div>
             </div>
         </div>
@@ -224,7 +239,7 @@
                 <div class="deactivate" id="deactivate">
                     <div>
                         <h4>Deactivate your account</h4>
-                        <p>Details about your account and password</p>
+                        <p>Deactivating your account will disable your profile and remove your info, photo and password.</p>
                     </div>
                     
                     <button class="btn danger">Deactivate</button> 
@@ -254,7 +269,7 @@
     
             <div class="box">
                 <h3>Quick links</h3>
-                <a href="../home/index.html"> <i class="fas fa-arrow-right"></i> Home </a>
+                <a href="../index.html"> <i class="fas fa-arrow-right"></i> Home </a>
                 <a href="../about/about.html"> <i class="fas fa-arrow-right"></i> Abouts </a>
                 <a href="../products/products.html"> <i class="fas fa-arrow-right"></i> Products </a>
                 <a href="../contact/contact.html"> <i class="fas fa-arrow-right"></i> Contact </a>

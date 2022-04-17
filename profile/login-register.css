@@ -58,7 +58,7 @@ body {
     border-bottom: 2px solid #ccc;
     border-top: 2px solid transparent;
     transition: all 0.2s ease;
-} 
+}
 
 .input-field input:is(:focus, :valid){
     border-bottom-color: #026670;

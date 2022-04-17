@@ -48,7 +48,7 @@ header a#logo-image img {
     display: block;
 }
 
-header div#menu-btn {
+header a#menu-btn {
     display: none;
 }
 
@@ -63,6 +63,10 @@ header {
 }
 
 /* Navigation bar styles */ 
+.mobile-view {
+    display: none;
+}
+
 .menubar {
     float: left;
     margin-left: 250px;
@@ -110,7 +114,7 @@ nav ul li:hover a {
     color: #EDEAE5;
     font-size: 30px;
     top: 15px;
-    margin: 50px 30px 0 10px;
+    padding: 50px 30px 0 10px;
     text-decoration: none;
 }
 
@@ -158,6 +162,7 @@ nav ul li:hover a {
 }
 
 .icon li .sub-menu ul li:hover {
+    transition: 1ms linear;
     display: block;
 }
 
@@ -169,7 +174,7 @@ nav ul li:hover a {
 
 .menubar ul li:hover .sub-menu ul li a:hover,
 .icons li:hover .sub-menu ul li a:hover {
-    color: #EDEAE5;
+    color: #FEF9C7;
     font-size: 22px;
 }
 
@@ -222,6 +227,7 @@ footer .box-container .box a:hover {
   
 footer .box-container .box a:hover i {
     padding-right: 20px;
+    transition: 0.3s linear;
 }
   
 footer .scomed {
@@ -268,7 +274,7 @@ footer .credit span {
 
 @media only screen and (max-width: 1150px) {
     /** Display menu button **/
-    .icons #menu-btn {
+    .icons a#menu-btn {
         display: inline-block;
         font-size: 30px;
         padding-left: 40px;
@@ -282,30 +288,49 @@ footer .credit span {
         display: none;
     }
 
-    /* Display menu */
-    header nav ul:hover, #menu-btn:hover+ul {
+    .icons #menu-btn:hover+.mobile-view, 
+    .icons .mobile-view:hover, 
+    .icons .mobile-view ul {
         display: block;
+    }
+
+    .mobile-view {
         position: absolute;
-        top: 90%;
-        right: 0;
+        width: 40%;
+        background-color: #026670;
+        top: 100px;
+        right: 40px;
+        text-align: right;
+        z-index: 1002;
+    }
+
+    .mobile-view li {
         width: 100%;
-        text-align: left;
-    }
-
-    header .menubar:hover li {
-        display: block;
-        min-width: 100%;
-        background-color: #003B41;
-        border-top: 1px solid #EDEAE5;
-        border-bottom: 1px solid #EDEAE5;
         margin: 0;
-        padding: 20px;
+        padding: 10px;
     }
 
-    header .menubar:hover a {
+    .mobile-view li:hover {
+        background-color: #003B41;
+        color: #FEF9C7;
+    }
+
+    .mobile-view li a {
+        width: 100%;
         font-size: 20px;
-        padding: 5px;
-        display: block;
     }
 
+    .mobile-view .mobile-sub li {
+        background-color: #003B41;
+    } 
+
+    .mobile-view .mobile-sub li a:hover,
+    .mobile-view li a:hover{
+        font-size: 22px;
+    }
+
+    .mobile-view .mobile-sub li:hover {
+        background-color: #026670;
+        color:#FEF9C7;
+    }
 }

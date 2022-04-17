@@ -170,19 +170,19 @@ h2.products-header {
 }
 
 .product-category:first-of-type {
-    background-image: url(../assets/images/7578953.jpeg);
+    background-image: url(../assets/images/index_img/men_bg.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .product-category:nth-of-type(2) {
-    background-image: url(../assets/images/istockphoto-1276549403-612x612.jpg);
+    background-image: url(../assets/images/index_img/women_bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .product-category:last-of-type {
-    background-image: url(../assets/images/product_bg_acc.jpg);
+    background-image: url(../assets/images/index_img/accessory_acc.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
